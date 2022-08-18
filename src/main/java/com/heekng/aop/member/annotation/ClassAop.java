@@ -1,12 +1,12 @@
-package com.heekng.aop.order.aop.member.annotation;
+package com.heekng.aop.member.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MethodAop {
-    String value();
+public @interface ClassAop {
+
 }

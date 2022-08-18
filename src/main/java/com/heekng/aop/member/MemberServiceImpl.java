@@ -1,7 +1,7 @@
-package com.heekng.aop.order.aop.member;
+package com.heekng.aop.member;
 
-import com.heekng.aop.order.aop.member.annotation.ClassAop;
-import com.heekng.aop.order.aop.member.annotation.MethodAop;
+import com.heekng.aop.member.annotation.MethodAop;
+import com.heekng.aop.member.annotation.ClassAop;
 import org.springframework.stereotype.Component;
 
 @ClassAop
