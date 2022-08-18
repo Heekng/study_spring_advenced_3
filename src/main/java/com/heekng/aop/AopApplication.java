@@ -1,9 +1,6 @@
 package com.heekng.aop;
 
-import com.heekng.aop.order.aop.AspectV1;
-import com.heekng.aop.order.aop.AspectV2;
-import com.heekng.aop.order.aop.AspectV3;
-import com.heekng.aop.order.aop.AspectV4Pointcut;
+import com.heekng.aop.order.aop.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
@@ -12,7 +9,8 @@ import org.springframework.context.annotation.Import;
 //@Import(AspectV1.class)
 //@Import(AspectV2.class)
 //@Import(AspectV3.class)
-@Import(AspectV4Pointcut.class)
+//@Import(AspectV4Pointcut.class)
+@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
 public class AopApplication {
 
 	public static void main(String[] args) {
