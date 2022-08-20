@@ -1,5 +1,6 @@
 package com.heekng.aop.exam;
 
+import com.heekng.aop.exam.annotation.Retry;
 import com.heekng.aop.exam.annotation.Trace;
 import org.springframework.stereotype.Repository;
 
@@ -10,10 +11,12 @@ public class ExamRepository {
 
     /**
      * 5번에 1번 실패하는 요청
+     *
      * @param itemId
-     * @return
+     * @returnw
      */
     @Trace
+    @Retry(4)
     public String save(String itemId) {
         seq++;
         if (seq % 5 == 0) {
